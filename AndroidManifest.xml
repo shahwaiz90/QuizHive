@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devtuts.quizhive"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+ 		<uses-permission android:name="android.permission.INTERNET" />
+  		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.devtuts.quizhive.views.MainActivity">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.devtuts.quizhive.controller.ServerController" android:noHistory="true">
+         </activity>
+         <activity
+            android:name="com.devtuts.quizhive.views.RegisterActivity">
+         </activity>
+         <activity
+            android:name="com.devtuts.quizhive.views.QuizesActivity">
+         </activity>
+         <activity
+            android:name="com.devtuts.quizhive.views.SignInActivity">
+         </activity>
+         <activity
+            android:name="com.devtuts.quizhive.views.ForgetPasswordActivity">
+         </activity>
+         <activity
+            android:name="com.devtuts.quizhive.views.DashboardActivity">
+         </activity>
+         <activity
+            android:name="com.devtuts.quizhive.views.StartQuizActivity">
+         </activity>
+    </application>
+
+</manifest>

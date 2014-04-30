@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".MainActivity" > 
+
+    <Button
+        android:id="@+id/MainActivitySignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MainActivityRegister"
+        android:layout_alignRight="@+id/MainActivityRegister"
+        android:layout_below="@+id/MainActivityRegister"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="50dip"
+        android:paddingRight="50dip"
+        android:text="@string/SignInButton"
+        android:textColor="@drawable/custom_text" />
+
+    <Button
+        android:id="@+id/MainActivityRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="50dip"
+        android:paddingRight="50dip"
+        android:text="@string/RegisterButton"
+        android:textColor="@drawable/custom_text" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="92dip" 
+        android:layout_height="92dip"
+        android:layout_above="@+id/MainActivityRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:src="@drawable/biglogo" 
+        android:contentDescription="@string/logo_quizhive"/>
+
+</RelativeLayout>

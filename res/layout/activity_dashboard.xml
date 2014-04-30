@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0eec88" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NestedLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" 
+        android:background="@drawable/roundedcorner"
+        android:divider="#0eec88" 
+ 		android:dividerHeight="10px" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/NestedLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/listView"
+        android:background="@drawable/roundedcorner"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="10dip" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:background="@drawable/search" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedcorner"
+            android:ems="10"
+            android:hint="@string/search" >
+ 
+        </EditText>
+    </LinearLayout>
+
+</RelativeLayout>
+ 

@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/RegActivityRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dip" 
+        android:background="@drawable/custom_button"
+        android:minHeight="30dp"
+        android:padding="6dip"
+        android:text="@string/RegisterButton"
+        android:textColor="@drawable/custom_text" />
+
+	<Button
+	    android:id="@+id/RegActivityCross"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/RegActivityRegister"
+	    android:layout_alignBottom="@+id/RegActivityRegister"
+	    android:layout_alignParentLeft="true"
+	    android:layout_margin="6dip"
+	    android:background="@drawable/custom_button" 
+	    android:paddingTop="5dip"
+	    android:paddingBottom="5dip"
+	    android:text="@string/crosssign"
+	    android:textColor="@drawable/custom_text" />
+
+		<LinearLayout
+		    android:id="@+id/NestedLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/RegActivityRegister"
+		    android:layout_centerHorizontal="true"
+		    android:layout_margin="20dip"
+		    android:layout_marginTop="65dp"
+		    android:background="@drawable/roundedcorner"
+		    android:orientation="vertical"
+		    android:paddingBottom="10dip"
+		    android:paddingLeft="30dip"
+		    android:paddingRight="30dip"
+		    android:paddingTop="10dip" >
+
+		    <EditText
+		        android:id="@+id/FirstName"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/roundedcorner"
+		        android:ems="10"
+		        android:focusable="true"
+		        android:hint="@string/fnamehint"
+		        android:inputType="textPersonName"
+		        android:maxLength="30"
+		        android:maxLines="1"
+		        android:padding="10dip" />
+
+		    <View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/divider" />
+ 
+
+		    <EditText
+		        android:id="@+id/EmailAddress"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/white"
+		        android:ems="10"
+		        android:focusable="true"
+		        android:hint="@string/emailhint"
+		        android:inputType="textEmailAddress"
+		        android:maxLength="60"
+		        android:maxLines="1"
+		        android:padding="10dip" />
+
+		    <View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/divider" />
+
+		    <EditText
+		        android:id="@+id/Password"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@color/white"
+		        android:ems="10"
+		        android:focusable="true"
+		        android:hint="@string/passwordhint"
+		        android:inputType="textPassword"
+		        android:maxLength="40"
+		        android:maxLines="1"
+		        android:padding="10dip" />
+
+		    <View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/divider" />
+		</LinearLayout>
+
+		<TextView
+		    android:id="@+id/AlreadyHaveId"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="20dp"
+		    android:background="@drawable/roundedcorner"
+		    android:padding="10dip"
+		    android:text="@string/alreadyhaveid" />
+    
+</RelativeLayout>

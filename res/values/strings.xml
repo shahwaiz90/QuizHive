@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuizHive</string>  
+    <string name="fnamehint">Display Name</string> 
+    <string name="emailhint">Email</string>
+    <string name="passwordhint">Password</string>
+    <string name="RegisterButton">Register</string>
+    <string name="SignInButton">Sign In</string>
+    <string name="ForgetPassword">Forget Your Password?</string>
+    <string name="crosssign">X</string>
+    <string name="agreetoterms">Agree to Terms</string>
+    <string name="alreadyhaveid">Already Have QuizHive ID? Sign In.</string> 
+	<string name="donthaveid">New to QuizHive? Register here.</string> 
+	<string name="SubmitButton">Submit</string> 
+	<string name="logo_quizhive">Logo - QuizHive</string>
+	<string name="topCategories">Top Categories</string> 
+	<string name="search">Search different exams</string> 
+	
+	<!-- Font Starts -->
+	<string name="font_calibri">calibri</string>
+	<!-- Font Ends -->
+	<!-- Menu Starts -->
+	<string name="menu_home">Home</string>
+	<string name="menu_profile">Profile</string>
+	<string name="menu_friends">Friends</string>
+	<string name="menu_settings">Settings</string>
+	<!-- Menu Ends -->
+</resources>

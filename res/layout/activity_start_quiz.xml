@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".MainActivity" >
+
+       <TextView
+        android:id="@+id/QuizActivityTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dip" 
+        android:background="@drawable/roundedcorner"
+        android:minHeight="30dp"
+        android:padding="6dip"
+        android:text="4 (timer)"  />
+
+	    <LinearLayout
+	        android:id="@+id/NestedLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/QuizActivityTimer"
+	        android:layout_centerHorizontal="true"
+	        android:layout_margin="20dip"
+	        android:background="@drawable/roundedcorner"
+	        android:orientation="vertical" 
+	        android:padding="10dip" >
+
+	        <TextView
+	            android:id="@+id/QuizQuestion"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/roundedcorner" 
+	            android:focusable="true" 
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip" 
+	            android:text="What is the name of that character which starts with H and ends with R. Hint: Harry Potter and the Chamber of Secret Movie?" >
+ 
+	        </TextView>
+	    </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/ExamTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/QuizActivityTimer"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/roundedcorner"
+	        android:padding="5dip"
+	        android:text="GAT Exam" />
+
+	    <TextView
+	        android:id="@+id/QuizStartActivityQuestionLeft"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/NestedLayout"
+	        android:layout_alignLeft="@+id/OptionLayout"
+	        android:layout_margin="10dip"
+	        android:background="@drawable/roundedcorner"
+	        android:minHeight="30dp"
+	        android:padding="6dip"
+	        android:text="10 Left" />
+<ScrollView
+	        android:id="@+id/scrollView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_alignTop="@+id/OptionLayout" 
+	        android:layout_below="@+id/NestedLayout"  
+	        android:layout_centerHorizontal="true"
+	        >
+ 
+	    <LinearLayout
+	        android:id="@+id/OptionLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/NestedLayout"
+	        android:layout_margin="10dip"
+	        android:orientation="vertical"
+	        android:paddingBottom="10dip"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip"
+	        android:paddingTop="10dip" >
+
+	        <TextView
+	            android:id="@+id/Option1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+	            android:background="@drawable/roundedcorner"
+	            android:focusable="true"
+	            android:padding="12dip"
+	            android:text="Option1" />
+
+	        <TextView
+	            android:id="@+id/Option2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+	            android:layout_marginTop="22dp"
+	            android:background="@drawable/roundedcorner"
+	            android:focusable="true"
+	            android:padding="12dip"
+	            android:text="Option2" />
+
+	        <TextView
+	            android:id="@+id/Option3"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+	            android:layout_marginTop="22dp"
+	            android:background="@drawable/roundedcorner"
+	            android:focusable="true"
+	            android:padding="12dip"
+	            android:text="Option3" />
+
+	        <TextView
+	            android:id="@+id/Option4"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="10dip"
+	            android:layout_marginTop="22dp"
+	            android:background="@drawable/roundedcorner"
+	            android:focusable="true"
+	            android:padding="12dip"
+	            android:text="Option4" />
+	    </LinearLayout>
+		</ScrollView>
+</RelativeLayout>
