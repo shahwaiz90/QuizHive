@@ -44,6 +44,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				//open signin activity
 				Intent openRegisterActivity = new Intent(MainActivity.this, SignInActivity.class);
 		        startActivity(openRegisterActivity);
 			}
