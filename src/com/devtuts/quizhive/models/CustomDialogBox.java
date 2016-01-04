@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class CustomDialogBox  extends Dialog implements
 android.view.View.OnClickListener {
 
-	public Activity c;
+	public Activity customDialogBox;
 	public Dialog d;
 	public Button okButton;
 	public TextView title, detail;
@@ -22,7 +22,7 @@ android.view.View.OnClickListener {
 	public CustomDialogBox(Activity a) {
 		super(a);
 		// TODO Auto-generated constructor stub
-		this.c = a;
+		this.customDialogBox = a;
 	}
 
 	@Override
