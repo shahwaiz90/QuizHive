@@ -144,11 +144,11 @@ public class ServerController extends Activity {
 		                categoryModel.setCategoryCount(categoryArray.getJSONObject(i).getString("count")); 
 		                Log.i("Category Name: ",categoryArray.getJSONObject(i).getString("name"));
 		                
-		                for(int j=0; j < categoryArray.getJSONObject(i).getJSONArray("quizes").length(); j++){
+		                for(int j=0; j < categoryArray.getJSONObject(i).getJSONArray("quizzes").length(); j++){
 		                	MovieModel movieModelObject = new MovieModel();
-		                	movieModelObject.setMovieId(categoryArray.getJSONObject(i).getJSONArray("quizes").getJSONObject(j).getString("id"));
-		                	movieModelObject.setMovieName(categoryArray.getJSONObject(i).getJSONArray("quizes").getJSONObject(j).getString("name")); 
-		                	Log.i("-MovieName: ",categoryArray.getJSONObject(i).getJSONArray("quizes").getString(1));
+		                	movieModelObject.setMovieId(categoryArray.getJSONObject(i).getJSONArray("quizzes").getJSONObject(j).getString("id"));
+		                	movieModelObject.setMovieName(categoryArray.getJSONObject(i).getJSONArray("quizzes").getJSONObject(j).getString("name")); 
+		                	Log.i("-MovieName: ",categoryArray.getJSONObject(i).getJSONArray("quizzes").getString(1));
 		                	categoryModel.addMovieObject(movieModelObject);
 		                }
 		                
